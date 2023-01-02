@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    *,*::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow-x: hidden;
+        width: 100vw
+    }
+    .slider {
+        width: 100vw;
+        display: flex;
+        animation: glisse 10s ease-in-out infinite;
+    }
+    .slider img {
+        margin: 0;
+        max-width: 100vw;
+    }
+   
+    
+    .slide {
+        width: 100vw;
+    }
+
+    @keyframes glisse {
+        0% {
+            transform: translateX(0);
+        }
+
+        33% {
+            transform: translateX(-100%);
+        }
+    
+        66% {
+            transform: translateX(-200%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+</style>
+<body>
+
+    <header>
+        <div class="wrapper">
+            <nav>
+                <div class="logo"> <img src="images/homedeco-logo-image.png" alt=""></div>
+                    
+                <ul>
+                    <li>
+                        <a href="#a_propos" class="active">Bienvenu</a>
+                    </li>
+
+                    <li>
+                        <a href="#a_propos">A propos</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#service">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="gallerie.html#card_wrapper">Gallerie</a>
+                    </li>
+
+                    <li>
+                        <a href="#Team">Team</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                    
+                </ul>
+            </nav>
+            <!-- end of desktop navigation menu -->
+
+    
+
+      
+            
+            <div class="hero-section">
+                <div class="slider">
+                    <img src="images/slide_1.png" alt="" />
+                    <img src="images/SLIDE_2.png" alt="" />
+                    <img src="IMAGES/SLIDE_3.png" alt="" />
+            </div>
+                
+                <div>      
+                    <h1 id="a_propos">Des aménagements sur-mesure uniques</h1>
+
+                    <p>
+                        Choisir HomeDeco, c’est choisir l’équation parfaite entre savoir-faire Algérien et accompagnement sur-mesure. Nous faisons de chaque projet une réalisation sur-mesure pour faire de votre espace de vie un lieu unique, comme vous.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper__about"> 
+
+                    <div class="wrapper__content">
+                        <div class="notre-agence">
+                        
+                            <img src="images/notre-agence-image.png" alt="" class="src">
+                            
+                            <p>NOTRE <br>
+                            AGENCE <br>
+                            L’Agence offre une expertise de qualité <br> en matière d’Architecture intérieure & <br> Décoration dans les domaines <br> résidentiels, commerciaux et corporatifs. <br> Notre mission au quotidien est de <br> sublimer vos intérieurs de A à Z !</p>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="wrapper__content">
+                        <div class="notre-savoir-faire">
+                        
+                            <img src="images/notre-savoir-faire-image.png" alt="" class="src">
+                        
+    
+                        
+                            <p>NOTRE <br>
+                                SAVOIR-FAIRE <br>
+                                Concevoir et réaliser des espaces <br> intérieurs esthétiques, confortables et <br> fonctionnels en jouant avec les volumes, <br> la lumière, le mobilier et les matériaux, <br> tout en tenant compte des contraintes <br> techniques et budgétaires.</p>
+                        
+                        </div>
+                    </div>
+    
+                    <div class="wrapper__content">
+                        <div class="nos-realisation">
+                        
+                            <img src="images/nos-realisation-image.png" alt="" class="src">
+                        
+    
+                        
+                            <p>NOS <br>
+                                Réalisation <br>
+                                Chaque réalisation est une conception <br> unique ou il est nécessaire de prendre en <br> compte tous les paramètres afin de mener <br> à bien votre projet final. <br> Projet sur-mesure & Clé en main !</p>
+                        </div>
+                    </div>   
+            
+        </div>
+
+
+
+    </header>
+
+    <!--end of the header section-->
+
+
+
+    <!-- end of about section -->
+
+    <section class="nos-services" id="service">
+        <h2 class="dark">NOS SERVICES</h2>
+        <div class="wrapper">
+
+
+            <div class="architecture-interieur">
+                
+                <img src="images/architecture-interieur-image.png" alt="" class="src">
+                <div class="text">
+                <h2>ARCHITECTURE INTÉRIEURE <br> </h2>
+                    <p><br>
+                        L’architecte d’intérieur concoit, rénove, décore et valorise vos <br> espaces de vie publics ou privés en jouant avec les volumes, la <br> lumière et les matériaux tout en prenant en compte les <br> différentes contraintes du projet de rénovation. <br>
+                        Caroline, mettra son professionnalisme et sa créativité à votre <br> service.</p>
+                </div>
+            </div>
+            
+
+            <div class="decoration-interieur">
+                
+                <img src="images/decoration-interieur-image.png" alt="" class="src">
+                <div class="text">
+                    <h2>DÉCORATION D’INTÉRIEUR <br> </h2>
+                    <p><br>
+                        La décoration d’intérieur consiste à aménager un espace pour le <br> rendre fonctionnel et agréable en prenant en considération des <br> critères culturels, techniques et économiques. <br>
+                        Le décorateur d’intérieur est la solution pour sublimer votre <br> habitation!</p>
+                </div>
+            </div>
+
+            <div class="architecture-commercial">
+                
+                <img src="images/architecture-commerciale-image.png" alt="" class="src">
+                <div class="text">
+                    <h2>ARCHITECTURE COMMERCIALE <br> </h2>
+                    <p><br>
+                        Le designer a pour mission la conception d’espaces intérieur <br> dans le but de véhiculer les valeurs et l’image de marque d’une <br> entreprise tout en stimulant la productivité de chaque <br> intervenants. Il est indispensable de se différencier face à la <br> concurrence. L’architecture devient donc fonctionnelle et <br> stratégique!</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- end of services section -->
+
+    <section class="contact" id="contact">
+        <h2 class="dark">Contactez-nous</h2>
+        <div class="wrapper_contact">
+            
+
+            <form action="" method="post">
+                <input type="text" placeholder="Nom*" name="" id="" required>
+                <input type="text" placeholder="Email*" name="" id="" required>
+                <input type="text" placeholder="Telephone*" name="" id="" required>
+                <input type="text" placeholder="Ville*" name="" id="" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Prenez le temps de nous en parler*"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <div class="wrapper_contact2">
+
+                <ul>
+                    <li><img src="images/contact.svg" alt=""> contact@homedeco.fr</li>
+                    <li><img src="images/telephone.svg" alt="">+21321524580</li>
+                </ul>
+    
+                <h4>Réseaux sociaux</h4>
+    
+                <a href="#">
+                    <img src="images/facebook.svg" alt="">
+                </a>
+    
+                <a href="#">
+                    <img src="images/instagram.svg" alt="">
+                </a>
+    
+                <a href="#">
+                    <img src="images/linkedin.svg" alt="">
+                </a>
+    
+    
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    <!-- end of contact section -->
+
+    <section class="team" id="Team">
+
+        <h2 class="dark">NOTRE TEAM</h2>
+        
+        <div class="wrapper_team">
+
+            <div class="info">
+                <img src="images/mehdi_slice.png" alt="">
+                <h3>Mehdi Saidi</h3>
+                <p>Architecte <br> mehdi.saidi@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <img src="images/yacine_slice.png" alt="">
+                <h3>Yacine Atouk</h3>
+                <p>Designer <br> yacine.atouk@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <img src="images/laila_slice.png" alt="">
+                <h3>Laila Fakir</h3>
+                <p>Décoratrice <br> laila.fakir@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <img src="images/farah_slice.png" alt="">
+                <h3>Farah Mouiz</h3>
+                <p>Architecte <br> 
+                    farah.mouiz@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <img src="images/bilel_slice.png" alt="">
+                <h3>Bilel Achour</h3>
+                <p>Décorateur <br> bilel.achour@gmail.com</p>
+            </div>
+    
+
+        </div>
+
+    </section>
+
+    <!--end of team section-->
+
+    <footer>
+        <div class="wrapper5">
+            <div class="links-container">
+                <div class="links1">
+                    <h3>NOS SERVICES</h3>
+                    
+                    <ul>
+                        <li>
+                            <a href="#">Comment?</a>
+                        </li>
+
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Paiment</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Conseiller personnel</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Service pro</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links2">
+                    <h3>Contact</h3>
+                    
+                    <ul>
+                        <li><img src="images/contact.svg" alt=""> contact@homedeco.fr</li>
+
+                        <li><img src="images/telephone.svg" alt="">+21321524580</li>
+
+                    </ul>
+                </div>
+
+                <div class="social_med">
+                    <h3>SUIVEZ-NOUS</h3>
+
+                    <a href="#">
+                        <img src="images/facebook.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="images/instagram.svg" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="images/linkedin.svg" alt="">
+                    </a>
+
+                </div>
+
+                <div class="links3">
+                    <h3>NEWSLETTER</h3>
+                    
+                        <P>Inscrivez-vous et bénéficiez de 10% de réduction immédiate</P>
+
+                        <form2 action="#" method="post">
+                            <input type="text" placeholder="Entrez votre Email" name="" id="" required>
+                            <button type="submit">Lancer</button>
+                        </form2>
+                       
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--end of the footer-->
+
+
+
+
+</body>
+</html>
